@@ -181,3 +181,7 @@ if (window.location.pathname.includes('index.html')) {
 } else if (window.location.pathname.includes('carro.html')) {
     carregarLocacoes();
 }
+
+
+
+
