@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Locação - Carros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Cadastro de Locação</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="carro">
+        </section>
+
+        <div id="totalCarro">
+            <h3>Total da Locação: R$ 0,00</h3>
+        </div>
+
+        <div class="formulario">
+            <h3>Dados para Locação</h3>
+            <form id="formLocacao" onsubmit="finalizarLocacao(event)">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+                
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" required>
+                
+                <label for="dataInicio">Data de Início:</label>
+                <input type="date" id="dataInicio" required>
+                
+                <label for="dataFim">Data de Devolução:</label>
+                <input type="date" id="dataFim" required>
+                
+                <label for="carro">Selecione o Carro:</label>
+                <select id="carro" required>
+                    <option value="">Selecione</option>
+                </select>
+                
+                <button type="submit">Finalizar Locação</button>
+            </form>
+        </div>
+
+        <div class="botoes">
+            <br>
+            <button onclick="window.location.href='index.html'">Voltar para a Loja</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

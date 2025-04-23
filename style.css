@@ -1,0 +1,163 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366; 
+    color: white;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .logo {
+    font-size: 0.5rem;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+header .carro button {
+    background-color: #006699;
+    color: rgb(236, 233, 233);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0099CC; 
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    width: calc(33.333% - 20px);
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 40%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card .preco {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal.oculto {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.janela {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.fechar {
+    background: none;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #00CCFF; 
+    font-size: 1.0rem;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+footer h2 {
+    color: #006699; 
+}
+
+#carro {
+    margin-top: 20px;
+    padding: 10px;
+    width: 400px;
+    object-fit: cover;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemCarro {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ce3f3f;
+    border-radius: 8px;
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    text-align: center;
+    max-height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemCarro img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    text-align: center;
+    max-height: 200px;
+}
+
+.botoes button {
+    background-color: #003366;
+    color: rgb(241, 241, 241);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.botoes button:hover {
+    background-color: #006699; 
+    color: #ce3f3f;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Carros - Aluguel de Carros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Loja de Carros</h1>
+        </div>
+        <div class="cadastro">
+            <button onclick="window.location.href='carro.html'">Cadastro de Locação</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="produtos">
+        </section>
+    </main>
+
+    <section id="modalDetalhes" class="modal oculto">
+        <div class="janela">
+            <button class="fechar" onclick="fecharModal()">X</button>
+            <div id="detalhesProduto"></div>
+        </div>
+    </section>
+
+    <footer>
+        <h2>By Larissa</h2>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
